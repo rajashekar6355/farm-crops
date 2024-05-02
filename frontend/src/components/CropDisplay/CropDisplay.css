@@ -1,0 +1,29 @@
+.crop-display{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.crop-display *{
+    background-color: #FFF7D4;
+}
+.crop-display h2{
+    font-weight: 600;
+    font-size: max(2vw,16px);
+    background-color: inherit;
+
+}
+.crop-display-item{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+    grid-template-rows: repeat(auto-fill,minmax(250px,1fr));
+    margin-top: 10px;
+    gap: 30px;
+    row-gap: 30px;
+    align-items: baseline;
+    justify-items: center;
+    background-color: inherit;
+}
+@media (max-width:450px) {
+.crop-display h2{
+    margin-bottom: 25px;
+}    
+}
